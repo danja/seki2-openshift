@@ -4,4 +4,4 @@
 # $OPENSHIFT_INTERNAL_IP:8080
 cd $OPENSHIFT_REPO_DIR/fuseki
 pwd > $OPENSHIFT_DIY_LOG_DIR/fuseki.log 2>&1
-nohup java -jar fuseki-server.jar --pages ../../foowiki --jetty-config ./conf/jetty.xml --config ./conf/foowiki-config.ttl > $OPENSHIFT_DIY_LOG_DIR/fuseki.log 2>&1 &
+nohup java -jar fuseki-server.jar --pages $OPENSHIFT_REPO_DIR/foowiki --jetty-config ./conf/jetty.xml --config ./conf/foowiki-config.ttl > $OPENSHIFT_DIY_LOG_DIR/fuseki.log 2>&1 &
